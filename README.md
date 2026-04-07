@@ -2,27 +2,27 @@
 
 # Playwright E2E Testing
 
-Projeto de automacao de testes end-to-end para o [The Internet](https://the-internet.herokuapp.com) usando Playwright com Python e pytest.
+Projeto de automação de testes end-to-end para o [The Internet](https://the-internet.herokuapp.com) usando Playwright com Python e pytest.
 
-## O que e testado
+## O que é testado
 
 | Funcionalidade | Testes |
 |----------------|--------|
-| Login | Credenciais validas/invalidas, logout |
+| Login | Credenciais válidas/inválidas, logout |
 | Checkboxes | Estados iniciais, toggle |
-| Dropdown | Selecao, troca de opcoes |
+| Dropdown | Seleção, troca de opções |
 | Drag and Drop | Arrastar entre colunas |
 | Dynamic Loading | Elementos ocultos e renderizados |
-| File Upload | Upload valido, submissao vazia |
+| File Upload | Upload válido, submissão vazia |
 | Hovers | Tooltip em avatares, links de perfil |
-| Key Presses | Deteccao de teclas |
+| Key Presses | Detecção de teclas |
 | JavaScript Alerts | Alert, confirm, prompt |
 
 ## Stack
 
-- [Playwright for Python](https://playwright.dev/python/) — framework de automacao
+- [Playwright for Python](https://playwright.dev/python/) — framework de automação
 - [pytest](https://docs.pytest.org/) — test runner
-- [pytest-playwright](https://github.com/microsoft/playwright-pytest) — integracao Playwright + pytest
+- [pytest-playwright](https://github.com/microsoft/playwright-pytest) — integração Playwright + pytest
 - Python 3.12+
 - Chromium (headless)
 - GitHub Actions (CI)
@@ -34,7 +34,7 @@ Projeto de automacao de testes end-to-end para o [The Internet](https://the-inte
 python -m venv venv
 source venv/bin/activate
 
-# Instalar dependencias
+# Instalar dependências
 pip install -r requirements.txt
 
 # Instalar browser
@@ -43,7 +43,7 @@ python -m playwright install chromium
 # Rodar todos os testes
 python -m pytest -v
 
-# Rodar teste especifico
+# Rodar teste específico
 python -m pytest tests/test_login.py -v
 python -m pytest tests/test_checkboxes.py -v
 python -m pytest tests/test_dropdown.py -v
@@ -54,7 +54,7 @@ python -m pytest tests/test_hovers.py -v
 python -m pytest tests/test_key_presses.py -v
 python -m pytest tests/test_javascript_alerts.py -v
 
-# Rodar com browser visivel
+# Rodar com browser visível
 python -m pytest -v --headed
 
 # Rodar com traces em falhas
@@ -89,19 +89,19 @@ playwright-e2e-testing/
 │   ├── test_key_presses.py
 │   └── test_login.py
 ├── conftest.py            # Fixtures pytest (page objects, browser setup)
-├── pytest.ini             # Configuracao do pytest
-└── requirements.txt       # Dependencias Python
+├── pytest.ini             # Configuração do pytest
+└── requirements.txt       # Dependências Python
 ```
 
 ## Arquitetura
 
-- **Page Object Model:** Cada pagina testada tem seu proprio Page Object com seletores e acoes encapsulados
+- **Page Object Model:** Cada página testada tem seu próprio Page Object com seletores e ações encapsulados
 - **Fixtures pytest:** Page Objects injetados como fixtures, browser gerenciado por pytest-playwright
-- **Auto-waiting:** Playwright aguarda elementos automaticamente, sem sleeps explicitos
-- **snake_case:** Convencao Python em todo o codigo
+- **Auto-waiting:** Playwright aguarda elementos automaticamente, sem sleeps explícitos
+- **snake_case:** Convenção Python em todo o código
 
-## Documentacao
+## Documentação
 
-- [Plano de Testes](docs/test-plan.md) — escopo, estrategia, riscos
+- [Plano de Testes](docs/test-plan.md) — escopo, estratégia, riscos
 - [Casos de Teste](docs/test-cases.md) — 33 casos detalhados
 - [Bug Reports](docs/bug-reports.md) — bugs encontrados durante os testes
