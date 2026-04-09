@@ -47,7 +47,7 @@ A página de Drag and Drop (/drag_and_drop) utiliza HTML5 Drag and Drop API de f
 | Passo | Ação | Resultado |
 |-------|------|-----------|
 | 1 | Acessar /drag_and_drop | Página carregada |
-| 2 | Usar page.locator('#column-a').drag_to('#column-b') | Nenhuma mudanca visual |
+| 2 | Usar page.locator('#column-a').drag_to('#column-b') | Nenhuma mudança visual |
 | 3 | Usar page.evaluate() com DataTransfer events | Drag funciona corretamente |
 
 **Resultado esperado:** Drag and drop funcionar com eventos nativos do browser/framework de teste
