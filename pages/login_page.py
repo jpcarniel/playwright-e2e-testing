@@ -9,9 +9,11 @@ class LoginPage:
     LOGOUT_BUTTON = 'a[href="/logout"]'
 
     def __init__(self, page):
+        """Initialize with a Playwright page instance."""
         self.page = page
 
     def visit(self):
+        """Navigate to the Login page."""
         self.page.goto("/login")
 
     def fill_username(self, username):

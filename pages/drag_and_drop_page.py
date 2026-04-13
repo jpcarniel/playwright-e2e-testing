@@ -8,9 +8,11 @@ class DragAndDropPage:
     COLUMN_B = "#column-b"
 
     def __init__(self, page):
+        """Initialize with a Playwright page instance."""
         self.page = page
 
     def visit(self):
+        """Navigate to the Drag and Drop page."""
         self.page.goto("/drag_and_drop")
 
     def get_column_a_header(self):

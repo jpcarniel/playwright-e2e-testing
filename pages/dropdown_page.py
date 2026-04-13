@@ -5,9 +5,11 @@ class DropdownPage:
     DROPDOWN = "#dropdown"
 
     def __init__(self, page):
+        """Initialize with a Playwright page instance."""
         self.page = page
 
     def visit(self):
+        """Navigate to the Dropdown page."""
         self.page.goto("/dropdown")
 
     def select_option(self, value):

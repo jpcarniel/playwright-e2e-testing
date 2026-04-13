@@ -7,9 +7,11 @@ class HoversPage:
     PROFILE_LINK = ".figcaption a"
 
     def __init__(self, page):
+        """Initialize with a Playwright page instance."""
         self.page = page
 
     def visit(self):
+        """Navigate to the Hovers page."""
         self.page.goto("/hovers")
 
     def hover_over_figure(self, index):

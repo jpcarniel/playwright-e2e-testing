@@ -7,9 +7,11 @@ class FileUploadPage:
     UPLOADED_FILE_NAME = "#uploaded-files"
 
     def __init__(self, page):
+        """Initialize with a Playwright page instance."""
         self.page = page
 
     def visit(self):
+        """Navigate to the File Upload page."""
         self.page.goto("/upload")
 
     def upload_file(self, file_path):

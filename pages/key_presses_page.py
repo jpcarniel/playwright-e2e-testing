@@ -6,9 +6,11 @@ class KeyPressesPage:
     RESULT = "#result"
 
     def __init__(self, page):
+        """Initialize with a Playwright page instance."""
         self.page = page
 
     def visit(self):
+        """Navigate to the Key Presses page."""
         self.page.goto("/key_presses")
 
     def press_key(self, key):

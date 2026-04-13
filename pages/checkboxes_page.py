@@ -5,9 +5,11 @@ class CheckboxesPage:
     CHECKBOXES = '#checkboxes input[type="checkbox"]'
 
     def __init__(self, page):
+        """Initialize with a Playwright page instance."""
         self.page = page
 
     def visit(self):
+        """Navigate to the Checkboxes page."""
         self.page.goto("/checkboxes")
 
     def get_checkbox(self, index):

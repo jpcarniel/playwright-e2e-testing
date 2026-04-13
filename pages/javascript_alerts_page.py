@@ -8,9 +8,11 @@ class JavaScriptAlertsPage:
     RESULT = "#result"
 
     def __init__(self, page):
+        """Initialize with a Playwright page instance."""
         self.page = page
 
     def visit(self):
+        """Navigate to the JavaScript Alerts page."""
         self.page.goto("/javascript_alerts")
 
     def trigger_alert(self):

@@ -7,6 +7,7 @@ class DynamicLoadingPage:
     LOADING_INDICATOR = "#loading"
 
     def __init__(self, page):
+        """Initialize with a Playwright page instance."""
         self.page = page
 
     def visit_example(self, example_number):
