@@ -15,3 +15,7 @@ test-results/
 playwright-report/
 .DS_Store
 node_modules/
+
+# Material de estudo pessoal — não publicar
+ESTUDO.html
+docs/index.html
