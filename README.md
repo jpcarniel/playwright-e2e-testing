@@ -105,3 +105,4 @@ playwright-e2e-testing/
 - [Plano de Testes](docs/test-plan.md) — escopo, estratégia, riscos
 - [Casos de Teste](docs/test-cases.md) — 33 casos detalhados
 - [Bug Reports](docs/bug-reports.md) — bugs encontrados durante os testes
+- [Material de Estudo (GitHub Pages)](https://jpcarniel.github.io/playwright-e2e-testing/) — guia completo de QA com Playwright
