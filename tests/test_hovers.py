@@ -2,8 +2,6 @@ from playwright.sync_api import expect
 
 
 class TestHovers:
-    """Tests for the Hovers page."""
-
     def test_should_display_name_when_hovering_over_first_avatar(self, hovers_page):
         hovers_page.visit()
         hovers_page.hover_over_figure(0)
@@ -28,7 +26,6 @@ class TestHovers:
     def test_should_have_correct_profile_links(self, hovers_page):
         hovers_page.visit()
 
-        # Verify each avatar links to the correct user profile
         for i in range(3):
             hovers_page.hover_over_figure(i)
             expect(hovers_page.get_profile_link(i)).to_have_attribute(

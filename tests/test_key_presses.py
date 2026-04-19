@@ -2,8 +2,6 @@ from playwright.sync_api import expect
 
 
 class TestKeyPresses:
-    """Tests for the Key Presses page."""
-
     def test_should_detect_letter_key_press(self, key_presses_page):
         key_presses_page.visit()
         key_presses_page.press_key("a")
